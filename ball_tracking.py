@@ -52,12 +52,8 @@ class BallTracker:
         while True:
             self.frame_count += 1
             ret, self.frame = self.cap.read()
-            
-            # if self.frame_count <= 960:
-            #     continue
-
+        
             print(f'FRAME: {self.frame_count}')
-            
             
             if not ret:
                 break 
